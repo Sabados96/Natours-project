@@ -18,18 +18,20 @@
   <body>
 
 <div class="navigation">
-  <input type="checkbox" class="navigation__checkbox" id ="navi_toggle">
+  <input type="checkbox" class="navigation__checkbox" id ="navi-toggle">
 
-  <label for="navi-toggle" class="navigation__button">MENU</label>
+  <label for="navi-toggle" class="navigation__button">
+    <span class="navigation__icon">&nbsp;</span>
+  </label>
   <div class="navigation__background">&nbsp;</div>
 
   <nav class="navigation__nav">
     <ul class="navigation__list">
-      <li class="navigation__item"><a href="#" class="navigation__link"></a>About Natours</li>
-      <li class="navigation__item"><a href="#" class="navigation__link"></a>Your benefits</li>
-      <li class="navigation__item"><a href="#" class="navigation__link"></a>Popular tours</li>
-      <li class="navigation__item"><a href="#" class="navigation__link"></a>Stories</li>
-      <li class="navigation__item"><a href="#" class="navigation__link"></a>Book now</li>
+      <li class="navigation__item"><a href="#" class="navigation__link"><span>01 </span>About Natours</a></li>
+      <li class="navigation__item"><a href="#" class="navigation__link"><span>02 </span>Your benefits</a></li>
+      <li class="navigation__item"><a href="#" class="navigation__link"><span>03 </span>Popular tours</a></li>
+      <li class="navigation__item"><a href="#" class="navigation__link"><span>04 </span>Stories</a></li>
+      <li class="navigation__item"><a href="#" class="navigation__link"><span>05 </span>Book now</a></li>
 
     </ul>
   </nav>
@@ -191,7 +193,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$297</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -223,7 +225,7 @@
                       <p class="card__price-only">Only</p>
                       <p class="card__price-value">$497</p>
                     </div>
-                    <a href="#" class="btn btn--white">Book now!</a>
+                    <a href="#popup" class="btn btn--white">Book now!</a>
                   </div>
                 </div>
               </div>
@@ -255,7 +257,7 @@
                         <p class="card__price-only">Only</p>
                         <p class="card__price-value">$897</p>
                       </div>
-                      <a href="#" class="btn btn--white">Book now!</a>
+                      <a href="#popup" class="btn btn--white">Book now!</a>
                     </div>
                   </div>
                 </div>
@@ -381,7 +383,22 @@
 </footer>
 
 
+<div class="popup" id="popup">
+  <div class="popup__content">
+    <div class="popup__left">
+      <img src="img/nat-8.jpg" alt="Tour Photo" class="popup__img">
+      <img src="img/nat-9.jpg" alt="Tour Photo" class="popup__img">
 
+    </div>
+      <div class="popup__right">
+        <a href="#section-tours" class="popup__close">&times;</a>
+        <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
+        <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
+        <p class="popup__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque laborum cupiditate tenetur sequi minus aliquid suscipit ipsa atque adipisci delectus nobis fugit, eum accusantium, natus dolorem aspernatur, nesciunt nam impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore velit ut, unde doloribus ea tempore adipisci eligendi tenetur fugit, delectus asperiores accusamus hic animi harum, error sunt pariatur veritatis! Sapiente?</p>
+        <a href="#" class="btn btn--green">Book now</a>
+    </div>
+  </div>
+</div>
 
 
 
