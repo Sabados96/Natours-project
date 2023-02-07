@@ -15,6 +15,15 @@
     box-shadow: 0 1rem 3rem rgba($color-black, 0.2);
     cursor: pointer;
     text-align: center;
+
+    @include respond(tab-port) {
+      top: 3.5rem;
+      right: 4rem;
+    }
+    @include respond(phone) {
+      top: 5rem;
+      right: 5rem;
+    }
   }
 
   &__background {
@@ -30,6 +39,14 @@
     );
     z-index: 1000;
     transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
+    @include respond(tab-port) {
+      top: 4rem;
+      right: 4rem;
+    }
+    @include respond(phone) {
+      top: 5rem;
+      right: 5rem;
+    }
   }
 
   &__nav {
@@ -44,10 +61,7 @@
   }
 
   &__list {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    @include absCenter;
     list-style: none;
     text-align: center;
     width: 100%;
